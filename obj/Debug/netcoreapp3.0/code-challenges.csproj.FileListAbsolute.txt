@@ -1,0 +1,11 @@
+/home/giselle/git/code-challenges/bin/Debug/netcoreapp3.0/code-challenges
+/home/giselle/git/code-challenges/bin/Debug/netcoreapp3.0/code-challenges.deps.json
+/home/giselle/git/code-challenges/bin/Debug/netcoreapp3.0/code-challenges.runtimeconfig.json
+/home/giselle/git/code-challenges/bin/Debug/netcoreapp3.0/code-challenges.runtimeconfig.dev.json
+/home/giselle/git/code-challenges/bin/Debug/netcoreapp3.0/code-challenges.dll
+/home/giselle/git/code-challenges/bin/Debug/netcoreapp3.0/code-challenges.pdb
+/home/giselle/git/code-challenges/obj/Debug/netcoreapp3.0/code-challenges.csprojAssemblyReference.cache
+/home/giselle/git/code-challenges/obj/Debug/netcoreapp3.0/code-challenges.AssemblyInfoInputs.cache
+/home/giselle/git/code-challenges/obj/Debug/netcoreapp3.0/code-challenges.AssemblyInfo.cs
+/home/giselle/git/code-challenges/obj/Debug/netcoreapp3.0/code-challenges.dll
+/home/giselle/git/code-challenges/obj/Debug/netcoreapp3.0/code-challenges.pdb
