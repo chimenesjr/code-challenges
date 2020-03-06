@@ -5,5 +5,4 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
     <RootNamespace>code_challenges</RootNamespace>
   </PropertyGroup>
-
 </Project>
