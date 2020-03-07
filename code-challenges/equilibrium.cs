@@ -6,15 +6,17 @@ namespace code_challenges
     public class equilibrium
     {
         int[] list = new int[] {3,1,2,4,3};
+        int[] list2 = new int[] {-3,1,-2,4,-3};
+        int[] list3 = new int[] {-1000,1000};
 
         public equilibrium() {
 
             var txt = String.Join(",", list.Select(x => x.ToString()).ToArray());
             txt.ToString().Write();
         
-            find1(list).ToString().Write();
+            find1(list3).ToString().Write();
             find2(list).ToString().Write();
-            find3(list).ToString().Write();
+            find3(list3).ToString().Write();
 
         }
 
@@ -98,6 +100,37 @@ namespace code_challenges
 
             return result;
         }
+        public int find4 (int[] A) {
+            // 84%
+            // Correctness 71%
+            // Performance 100%
+
+            var first = A[0];
+            var sec = 0;
+
+            foreach (var item in A)
+            {
+                sec += item;
+            }
+
+            sec -= first;
+            var diff = Math.Abs(first - sec);
+
+            for (int i = 1; i < A.Length; i++)
+            {
+                first += A[i];
+                sec -= A[i];
+
+                var current = Math.Abs(first - sec);
+                
+                if (diff > current)
+                    diff = current;
+            }
+
+            return diff;
+
+            // {-1000,1000};
+        }
 
     }
 }
@@ -108,5 +141,4 @@ public static class Extension
     {
         Console.WriteLine(value);
     }
-
 }

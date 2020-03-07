@@ -6,7 +6,8 @@ namespace code_challenges
     {
         static void Main(string[] args)
         {
-            new equilibrium();
+            // new equilibrium();
+            new cyclicrotation();
         }
     }
 }
