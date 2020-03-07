@@ -8,7 +8,8 @@ namespace code_challenges
         {
             // new equilibrium();
             //new cyclicrotation();
-            new maxcounter();
+            // new maxcounter();
+            new binarygap();
         }
     }
 }
