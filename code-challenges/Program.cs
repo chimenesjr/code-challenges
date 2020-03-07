@@ -7,7 +7,8 @@ namespace code_challenges
         static void Main(string[] args)
         {
             // new equilibrium();
-            new cyclicrotation();
+            //new cyclicrotation();
+            new maxcounter();
         }
     }
 }

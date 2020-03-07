@@ -1,5 +1,6 @@
 using System;
 using System.Linq;
+using code_challenges.Util;
 
 namespace code_challenges
 {
@@ -44,6 +45,7 @@ namespace code_challenges
 
         public int[] find2(int[] A, int K)
         {
+            // 100%
             int[] newOne = new int[A.Length];
             var size = A.Length;
 
@@ -56,18 +58,5 @@ namespace code_challenges
             return newOne;
         }
 
-    }
-
-    public static class Extension
-    {
-        public static string Extract(this int[] values)
-        {
-            return String.Join(",", values.Select(x => x.ToString()).ToArray());
-        }
-
-            public static void Write(this string value)
-        {
-            Console.WriteLine(value);
-        }
     }
 }

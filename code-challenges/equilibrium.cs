@@ -1,5 +1,6 @@
 using System;
 using System.Linq;
+using code_challenges.Util;
 
 namespace code_challenges
 {
@@ -11,13 +12,9 @@ namespace code_challenges
 
         public equilibrium() {
 
-            var txt = String.Join(",", list.Select(x => x.ToString()).ToArray());
-            txt.ToString().Write();
-        
             find1(list3).ToString().Write();
             find2(list).ToString().Write();
             find3(list3).ToString().Write();
-
         }
 
         public int find1(int[] a){
@@ -132,13 +129,5 @@ namespace code_challenges
             // {-1000,1000};
         }
 
-    }
-}
-
-public static class Extension
-{
-    public static void Write(this string value)
-    {
-        Console.WriteLine(value);
     }
 }
