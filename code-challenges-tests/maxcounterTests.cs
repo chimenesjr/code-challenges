@@ -19,6 +19,9 @@ namespace code_challenges_tests
         {
             var response = maxcounter.find1(A, list);
             CollectionAssert.AreEqual(response, result);
+
+            response = maxcounter.find2(A, list);
+            CollectionAssert.AreEqual(response, result);
         }
 
         [TestMethod]
@@ -26,6 +29,9 @@ namespace code_challenges_tests
         public void Test2(int A, int[] list, int[] result)
         {
             var response = maxcounter.find1(A, list);
+            CollectionAssert.AreEqual(response, result);
+
+            response = maxcounter.find2(A, list);
             CollectionAssert.AreEqual(response, result);
         }
 
@@ -35,6 +41,9 @@ namespace code_challenges_tests
         {
             var response = maxcounter.find1(A, list);
             CollectionAssert.AreEqual(response, result);
+
+            response = maxcounter.find2(A, list);
+            CollectionAssert.AreEqual(response, result);
         }
 
         [TestMethod]
@@ -43,6 +52,9 @@ namespace code_challenges_tests
         {
             var response = maxcounter.find1(A, list);
             CollectionAssert.AreEqual(response, result);
+
+            response = maxcounter.find2(A, list);
+            CollectionAssert.AreEqual(response, result);
         }
 
         [TestMethod]
@@ -50,6 +62,9 @@ namespace code_challenges_tests
         public void Test5(int A, int[] list, int[] result)
         {
             var response = maxcounter.find1(A, list);
+            CollectionAssert.AreEqual(response, result);
+
+            response = maxcounter.find2(A, list);
             CollectionAssert.AreEqual(response, result);
         }
     }

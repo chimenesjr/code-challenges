@@ -13,9 +13,9 @@ namespace code_challenges
 
         public maxcounter()
         {
-            // find1(5, list).Extract().Write();
-            find1(1, list2).Extract().Write();
-            // find1(1, list3).Extract().Write();
+            find2(5, list).Extract().Write();
+            // find1(1, list2).Extract().Write();
+            //find1(1, list3).Extract().Write();
             // find1(1, list4).Extract().Write();
         }
 
@@ -45,6 +45,42 @@ namespace code_challenges
 
                 if(result[currentValue-1] > max)
                     max = result[currentValue-1];
+            }
+
+            return result;
+        }
+
+        public int[] find2 (int N, int[] A)
+        {
+            // 100%
+            var result = new int[N];
+            var min = 0;
+            var max = 0;
+
+            for (int i = 0; i < A.Length; i++)
+            {
+                var currentValue = A[i];
+
+                if (currentValue > N)
+                {
+                    min = max;
+                    continue;
+                }
+                else if(result[currentValue-1] < min)
+                {
+                    result[currentValue-1] = min + 1;
+                }
+                else
+                    result[currentValue-1] = result[currentValue-1] + 1;
+                
+                if(result[currentValue-1] > max)
+                    max = result[currentValue-1];
+            }
+
+            for (int i = 0; i < result.Length; i++)
+            {
+                if (result[i] < min)
+                    result[i] = min;
             }
 
             return result;
