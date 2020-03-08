@@ -13,7 +13,8 @@ namespace code_challenges
             // new oddocurrencesinarray();
             // new frogimp();
             // new PermMissingElem();
-            new missinginteger();
+            // new missinginteger();
+            new FrogRiverOne();
         }
     }
 }
