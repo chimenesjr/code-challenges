@@ -53,6 +53,7 @@ namespace code_challenges
         public int[] find2 (int N, int[] A)
         {
             // 100%
+            // version: after tutorial
             var result = new int[N];
             var min = 0;
             var max = 0;

@@ -9,7 +9,11 @@ namespace code_challenges
             // new equilibrium();
             //new cyclicrotation();
             // new maxcounter();
-            new binarygap();
+            // new binarygap();
+            // new oddocurrencesinarray();
+            // new frogimp();
+            // new PermMissingElem();
+            new missinginteger();
         }
     }
 }

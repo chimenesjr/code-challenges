@@ -46,6 +46,7 @@ namespace code_challenges
         public int[] find2(int[] A, int K)
         {
             // 100%
+            // version: after tutorial
             int[] newOne = new int[A.Length];
             var size = A.Length;
 

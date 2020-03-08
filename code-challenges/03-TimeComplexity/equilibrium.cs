@@ -12,15 +12,16 @@ namespace code_challenges
 
         public equilibrium() {
 
-            find1(list3).ToString().Write();
-            find2(list).ToString().Write();
-            find3(list3).ToString().Write();
+            // find1(list3).ToString().Write();
+            // find2(list).ToString().Write();
+            find4(list3).ToString().Write();
         }
 
         public int find1(int[] a){
             // 53%
             // Correctness 100%
             // Performance 0%
+            // version: my
             
             var size = a.Length;
             var index = 1;
@@ -52,6 +53,7 @@ namespace code_challenges
             // 53%
             // Correctness 100%
             // Performance 0%
+            // version: my
             
             var result = Int32.MaxValue;
 
@@ -73,6 +75,7 @@ namespace code_challenges
             // 46%
             // Correctness 42%
             // Performance 50%
+            // version: my
 
             var result = 0;
 
@@ -101,13 +104,14 @@ namespace code_challenges
             // 84%
             // Correctness 71%
             // Performance 100%
+            // version: after turorial
 
             var first = A[0];
             var sec = 0;
 
-            foreach (var item in A)
+            for (int i = 0; i < A.Length; i++)
             {
-                sec += item;
+                sec = sec + A[i];
             }
 
             sec -= first;
@@ -126,7 +130,6 @@ namespace code_challenges
 
             return diff;
 
-            // {-1000,1000};
         }
 
     }

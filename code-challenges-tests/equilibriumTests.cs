@@ -41,16 +41,16 @@ namespace code_challenges_tests
             Assert.AreEqual(2000, response);
         }
 
-        // [TestMethod]
-        // public void Test3() {
-        //     var response = equilibrium.find3(list);
-        //     Assert.AreEqual(1, response);
+        [TestMethod]
+        public void Test3() {
+            var response = equilibrium.find3(list);
+            Assert.AreEqual(1, response);
 
-        //     response = equilibrium.find3(list2);
-        //     Assert.AreEqual(1, response);
+            response = equilibrium.find3(list2);
+            Assert.AreEqual(1, response);
 
-        //     response = equilibrium.find3(list3);
-        //     Assert.AreEqual(2000, response);
-        // }
+            response = equilibrium.find3(list3);
+            Assert.AreEqual(2000, response);
+        }
     }
 }

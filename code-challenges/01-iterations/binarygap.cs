@@ -14,7 +14,9 @@ namespace code_challenges
 
         public int find(int N) 
         {
-            // 100%   
+            // 100%
+            // version: my
+            
             var count = 0;
             var start = false;
             var lastCount = 0;
