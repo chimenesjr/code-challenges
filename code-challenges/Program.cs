@@ -6,15 +6,28 @@ namespace code_challenges
     {
         static void Main(string[] args)
         {
-            // new equilibrium();
-            //new cyclicrotation();
-            // new maxcounter();
+            // 01-iterations
             // new binarygap();
+
+            // 02-Arrays
+            // new cyclicrotation();
             // new oddocurrencesinarray();
+
+            // 03-TimeComplexity
+            // new equilibrium();
             // new frogimp();
             // new PermMissingElem();
+
+            // 04-CountingElements
+            // new maxcounter();
             // new missinginteger();
-            new FrogRiverOne();
+            // new FrogRiverOne();
+            // new PermCheck();
+
+            // 5-PrefixSums
+            new CountDiv();
         }
+
+
     }
 }
