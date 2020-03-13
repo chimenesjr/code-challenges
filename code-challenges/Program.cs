@@ -25,7 +25,9 @@ namespace code_challenges
             // new PermCheck();
 
             // 5-PrefixSums
-            new CountDiv();
+            // new CountDiv();
+
+            new algorithms();
         }
 
 
