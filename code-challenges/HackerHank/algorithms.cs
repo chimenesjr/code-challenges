@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using code_challenges.Util;
+using System.Text;
 
 namespace code_challenges
 {
@@ -9,27 +10,15 @@ namespace code_challenges
     {
         public algorithms()
         {
-            Console.WriteLine($"{find(8, "UDDDUDUU").ToString()} - 1");
-            Console.WriteLine($"{find(12, "DDUUDDUDUUUD").ToString()} - 2");
+            Console.WriteLine($"{repeatedString("a", 1000000000000)} - 1000000000000");
         }
 
-        static int find(int n, string s) {
+        public static int[] ArrayDiff(int[] a, int[] b)
+        {
+            return a.Except(b).ToArray();
 
-            var level = 0;
-            var array = s.ToArray();
-            var count= 0;
 
-            for (int i = 0; i < n; i++)
-            {
-                if (array[i] == 'D')
-                    level--;
-                else {
-                    level++;
-                    if(level == 0)
-                        count++;
-                }
-            }
-            return count;
+            
         }
     }
 }

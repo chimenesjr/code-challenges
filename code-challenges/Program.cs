@@ -27,6 +27,19 @@ namespace code_challenges
             // 5-PrefixSums
             // new CountDiv();
 
+            // 06-Sorting
+            // new distinct();
+            // new MaxProductOfThree();
+
+            // 07-StackAndQueues
+            // new brackets();
+            // new fish();
+            // new nesting();
+
+            // 08-Leader
+            // new dominator();
+
+
             new algorithms();
         }
 
