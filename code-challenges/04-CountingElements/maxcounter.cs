@@ -54,37 +54,37 @@ namespace code_challenges
         {
             // 100%
             // version: after tutorial
-            var result = new int[N];
-            var min = 0;
-            var max = 0;
+            
+            var list = new int[N];
+            var maxcounter = 0;
+            var top = 0;
 
             for (int i = 0; i < A.Length; i++)
             {
-                var currentValue = A[i];
-
-                if (currentValue > N)
+                var index = A[i]-1;
+                if (index > list.Length-1)
                 {
-                    min = max;
-                    continue;
-                }
-                else if(result[currentValue-1] < min)
-                {
-                    result[currentValue-1] = min + 1;
+                    maxcounter = top;
                 }
                 else
-                    result[currentValue-1] = result[currentValue-1] + 1;
-                
-                if(result[currentValue-1] > max)
-                    max = result[currentValue-1];
+                {
+                    if(list[index] < maxcounter)
+                        list[index] = 1 + maxcounter;
+                    else
+                        list[index] = list[index] + 1;
+
+                    if(list[index] > top)
+                        top = list[index];
+                }
             }
 
-            for (int i = 0; i < result.Length; i++)
+            for (int i = 0; i < list.Length; i++)
             {
-                if (result[i] < min)
-                    result[i] = min;
+                if(list[i] < maxcounter)
+                    list[i] = maxcounter;
             }
 
-            return result;
+            return list;
         }
     }
 }

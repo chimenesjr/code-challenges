@@ -7,40 +7,42 @@ namespace code_challenges
         static void Main(string[] args)
         {
             // 01-iterations
-            // new binarygap();
+            // new Unity.binarygap();
 
             // 02-Arrays
-            // new cyclicrotation();
-            // new oddocurrencesinarray();
+            // new Unity.cyclicrotation();
+            // new Unity.oddocurrencesinarray();
 
             // 03-TimeComplexity
-            // new equilibrium();
-            // new frogimp();
-            // new PermMissingElem();
+            // new Unity.equilibrium();*
+            // new Unity.frogimp();*
+            // new Unity.PermMissingElem();
 
             // 04-CountingElements
-            // new maxcounter();
-            // new missinginteger();
-            // new FrogRiverOne();
-            // new PermCheck();
+            // new Unity.maxcounter();*
+            // new Unity.missinginteger();*
+            // new Unity.FrogRiverOne(); *
+            // new Unity.PermCheck();
 
             // 5-PrefixSums
-            // new CountDiv();
+            // new Unity.CountDiv();
+            // new Unity.passingcars();
+            new Unity.triangle();
 
             // 06-Sorting
-            // new distinct();
-            // new MaxProductOfThree();
+            // new Unity.distinct();
+            // new Unity.MaxProductOfThree();
 
             // 07-StackAndQueues
-            // new brackets();
-            // new fish();
-            // new nesting();
+            // new Unity.brackets();
+            // new Unity.fish();
+            // new Unity.nesting();
 
             // 08-Leader
-            // new dominator();
+            // new Unity.dominator();
 
 
-            new algorithms();
+            // new algorithms();
         }
 
 

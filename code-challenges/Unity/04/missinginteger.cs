@@ -2,7 +2,7 @@ using System;
 using System.Linq;
 using code_challenges.Util;
 
-namespace code_challenges
+namespace code_challenges.Unity
 {
     public class missinginteger
     {
@@ -15,34 +15,18 @@ namespace code_challenges
         public missinginteger()
         {
             Console.WriteLine($"5: {find(list5)} - 11");
-            Console.WriteLine($"1: {find(list)} - 5");
             Console.WriteLine($"2: {find(list2)} - 4");
+            Console.WriteLine($"1: {find(list)} - 5");
             Console.WriteLine($"3: {find(list3)} - 1");
             Console.WriteLine($"4: {find(list4)} - 1");
         }
 
         public int find(int[] A)
         {
-            // 100%
-            // vesion: my
+            // 20:23 - 20:36 (55%)
+            // 20:44 (100%)
 
-            var result = 0;
-
-            var newList = A.Select(x=> x).Distinct().OrderBy(z=> z).ToArray();
-            var toMatch = 1;
-
-            for (int i = 0; i < newList.Length; i++)
-            {
-                if(newList[i] < 1)
-                    continue;
-
-                if(newList[i] != toMatch)
-                    return toMatch;
-                
-                toMatch++;
-            }
-
-            return toMatch;
+            return 0;
         }
     }
 }
