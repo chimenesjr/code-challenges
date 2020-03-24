@@ -45,5 +45,18 @@ namespace code_challenges
 
             return result;
         }
+
+        private int find(int A, int B, int K)
+        {
+            // 100% after video
+
+            double min = 0;
+            double max = 0;
+
+            min = Math.Ceiling(A / (double)K);
+            max = Math.Floor(B / (double)K);
+
+            return Convert.ToInt32(max - min + 1);
+        }
     }
 }

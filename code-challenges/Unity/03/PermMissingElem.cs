@@ -17,8 +17,8 @@ namespace code_challenges.Unity
 
         public PermMissingElem()
         {
-            ($"{find(new int[]{2,3,1,5})} - 4").Write();
             ($"{find(new int[]{})} - 1").Write();
+            ($"{find(new int[]{2,3,1,5})} - 4").Write();
             ($"{find(new int[]{2})} - 1").Write();
             ($"{find(new int[]{4})} - 1").Write();
             ($"{find(new int[]{1})} - 2").Write();
@@ -29,8 +29,10 @@ namespace code_challenges.Unity
         public int find(int[] A)
         {
             // 19:35 (100%)
+            // 19:42 - 19:46 (100%)
 
-return 0;
+          
+            return 0;
         }
     }
 }

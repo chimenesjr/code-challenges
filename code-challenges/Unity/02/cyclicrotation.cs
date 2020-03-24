@@ -23,7 +23,17 @@ namespace code_challenges.Unity
         public int[] find1(int[] A, int K) 
         {
             // 17:39 - 17:49 (100%)
-            return new int[0];
+            // 17:02 - 17:05 (100%)
+
+            var list = new int[A.Length];
+
+            for (int i = 0; i < A.Length; i++)
+            {
+                var newindex = (i + K) % A.Length;
+                list[newindex] = A[i];
+            }
+
+            return list;
         }
 
     }

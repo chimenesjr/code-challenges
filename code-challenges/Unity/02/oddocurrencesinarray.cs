@@ -17,6 +17,7 @@ namespace code_challenges.Unity
         public int find(int[] A)
         {
             // 18:16 - 18:20 (100%)
+            // 19:19 - 19:21 (100%)
 
             return 0;
         }

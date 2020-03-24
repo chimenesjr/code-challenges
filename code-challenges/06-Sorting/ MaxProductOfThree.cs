@@ -16,39 +16,27 @@ namespace code_challenges
 
         public int solution(int[] A)
         {
-            //11%
-            var max = 1000 * -1;
+            // version: my
+            // 13 min (100%)
 
-            for (int i = 0; i < A.Length; i++)
+            Array.Sort(A);
+
+            var max = 0;
+
+            if (A.Length >= 3)
             {
-                if (i == A.Length-2)
-                    break;
-                var a = A[i];
-                var bi = findNext(A, i, a);
-                var b = A[bi];
-                var ci = findNext(A, bi, b);
-                var c = A[ci];
+                max = A[A.Length-3] * A[A.Length-2] * A[A.Length-1];
 
-                var prod = a*b*c;
-
-                if (prod > max)
-                    max = prod;
-                
-                if (ci >= A.Length)
-                    break;
+                if (A[0] < 0 || A[1] < 0)
+                {
+                    var try1 = A[0] * A[1] * A[A.Length-1];
+                    if(try1 > max)
+                        max = try1;
+                    
+                }
             }
 
             return max;
-        }
-
-        int findNext(int[] A, int current, int size)
-        {
-            for (int i = 0; i < A.Length; i++)
-            {
-                if (i > current && A[i] >= size)
-                    return i;
-            }
-            return 0;
         }
     }
 }

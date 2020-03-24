@@ -14,20 +14,19 @@ namespace code_challenges
             // new Unity.oddocurrencesinarray();
 
             // 03-TimeComplexity
-            // new Unity.equilibrium();*
-            // new Unity.frogimp();*
+            // new Unity.equilibrium();
+            // new Unity.frogimp();
             // new Unity.PermMissingElem();
 
             // 04-CountingElements
-            // new Unity.maxcounter();*
-            // new Unity.missinginteger();*
-            // new Unity.FrogRiverOne(); *
+            // new Unity.maxcounter();
+            // new Unity.missinginteger();
+            // new Unity.FrogRiverOne();
             // new Unity.PermCheck();
 
             // 5-PrefixSums
             // new Unity.CountDiv();
             // new Unity.passingcars();
-            new Unity.triangle();
 
             // 06-Sorting
             // new Unity.distinct();
@@ -41,8 +40,11 @@ namespace code_challenges
             // 08-Leader
             // new Unity.dominator();
 
+            // 09 - Maximum slice problem
+            // new Unity.MaxSliceSum();
 
-            // new algorithms();
+            new coding();
+
         }
 
 

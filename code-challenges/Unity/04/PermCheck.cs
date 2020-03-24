@@ -20,9 +20,9 @@ namespace code_challenges.Unity
         private int find(int[] A)
         {
             // 6:08 - 6:12 (100%)
+            // 3 min (100%)
 
-           
-            return 0;
+           return 0;
         }
 
     }

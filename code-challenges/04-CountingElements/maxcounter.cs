@@ -13,7 +13,7 @@ namespace code_challenges
 
         public maxcounter()
         {
-            find2(5, list).Extract().Write();
+            find(5, list).Extract().Write();
             // find1(1, list2).Extract().Write();
             //find1(1, list3).Extract().Write();
             // find1(1, list4).Extract().Write();
@@ -50,38 +50,38 @@ namespace code_challenges
             return result;
         }
 
-        public int[] find2 (int N, int[] A)
+        public int[] find(int N, int[] A)
         {
-            // 100%
-            // version: after tutorial
-            
-            var list = new int[N];
+            // 19:52 - 20:13 (33%)
+            // 20:19 - (100%)
+            // 19:51 - 20:03 (100%)
+
             var maxcounter = 0;
-            var top = 0;
+            var min = 0;
+            var list = new int[N];
 
             for (int i = 0; i < A.Length; i++)
             {
-                var index = A[i]-1;
-                if (index > list.Length-1)
+                if(A[i] > N)
                 {
-                    maxcounter = top;
+                    min = maxcounter;
                 }
                 else
                 {
-                    if(list[index] < maxcounter)
-                        list[index] = 1 + maxcounter;
+                    if(list[A[i]-1] < min)
+                        list[A[i]-1] = min + 1;
                     else
-                        list[index] = list[index] + 1;
+                        list[A[i]-1]++;
 
-                    if(list[index] > top)
-                        top = list[index];
+                    if (list[A[i]-1] > maxcounter)
+                        maxcounter = list[A[i]-1];
                 }
             }
 
             for (int i = 0; i < list.Length; i++)
             {
-                if(list[i] < maxcounter)
-                    list[i] = maxcounter;
+                if (list[i] < min)
+                    list[i] = min;
             }
 
             return list;

@@ -28,7 +28,7 @@ namespace code_challenges.Unity
         {
             // 17:04 - 17:18 (46%)
             // 8:34 - 8:44 (100%)
-
+            // 16:53 - 17:01 (80%
 
             return 0;
             
@@ -36,7 +36,7 @@ namespace code_challenges.Unity
 
         private int CountDiv(char[] binary)
         {
-           
+            
 
             return 0;
         }

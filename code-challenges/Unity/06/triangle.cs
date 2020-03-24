@@ -15,22 +15,7 @@ namespace code_challenges.Unity
         public int solution(int[] A)
         {
             // 9:45 (93%)
-            if(A.Length < 3)
-                return 0;
-            
-            Array.Sort(A);
 
-            for (int i = 0; i < A.Length - 2; i++)
-            {
-                var first = A[i];
-                var sec = A[i+1];
-                var thir = A[i+2];
-
-                if(first+sec > thir)
-                {
-                    return 1;
-                }
-            }
 
             return 0;
         }

@@ -11,6 +11,11 @@ namespace code_challenges.Util
             return String.Join(",", values.Select(x => x.ToString()).ToArray());
         }
 
+        public static string Extract(this char[] values)
+        {
+            return String.Join(",", values.Select(x => x.ToString()).ToArray());
+        }
+
         public static string Extract(this List<int> values)
         {
             return String.Join(",", values.Select(x => x.ToString()).ToArray());

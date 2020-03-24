@@ -19,8 +19,12 @@ namespace code_challenges.Unity
         public int solution(int[] A, int[] B)
         {
             // 7:16 - 7:49 (62%)
-            System.Collections.Stack stack = new System.Collections.Stack();
-return 0;
+            // 19 min (100%)
+            // 10 min (100%)
+
+         
+
+            return 0;
         }
     }
 

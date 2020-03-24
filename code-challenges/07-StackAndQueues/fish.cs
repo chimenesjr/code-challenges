@@ -114,6 +114,8 @@ namespace code_challenges
         {
             //100%
             // seguindo tutorial
+            //nao usar esse
+            
             System.Collections.Stack list = new System.Collections.Stack();
             var count = 0;
 
