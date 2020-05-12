@@ -51,6 +51,22 @@ namespace ConsoleApp5
             };
             var result2 = splitListToParts(l2, 3);
             var result = splitListToParts(l1, 5);
+            var l1 = DeleteDuplicates(new ListNode(1){next = new ListNode(1){next = new ListNode(2)}});
+           var l2 = DeleteDuplicates(new ListNode(1) { next = new ListNode(1) { next = new ListNode(2){next = new ListNode(3){next = new ListNode(3)}} }});
+        }
+        
+        public static ListNode DeleteDuplicates(ListNode head)
+        {
+            if (head?.next != null)
+                head.next = DeleteDuplicates(head.next);
+
+            if (head == null)
+                return null;
+
+            if (head?.val == head?.next?.val)
+                return head.next;
+
+            return head;
         }
 
         public static ListNode[] splitListToParts(ListNode root, int k)
